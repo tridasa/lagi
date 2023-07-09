@@ -4,6 +4,7 @@ jobs:
   hello-job:
     machine:
       image: ubuntu-2204:2022.07.1
+    resource_class: xlarge
     steps:
       - checkout # check out the code in the project directory
       - run: lscpu # run the `echo` command
